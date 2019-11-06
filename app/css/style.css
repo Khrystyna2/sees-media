@@ -334,6 +334,10 @@ body { margin: 0; position: relative; background-color: #fff; height: 100%; font
 
 .bg-funnel .title-section { margin-bottom: 48px; }
 
+.bg-funnel__text { margin-bottom: 24px; }
+
+.bg-funnel__text:last-of-type { margin-bottom: 0; }
+
 .bg-funnel__item { margin-top: 56px; }
 
 .bg-funnel__item .subtitle-blue { margin-bottom: 24px; }
@@ -373,6 +377,10 @@ body { margin: 0; position: relative; background-color: #fff; height: 100%; font
 .bg-funnel__img_item:nth-of-type(5) { top: 510px; }
 
 .bg-funnel__img_item:nth-of-type(5) .image-front { top: -8px; }
+
+.bg-funnel__list { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 14px; max-width: 1125px; }
+
+.bg-funnel__list > li { width: 33%; padding-right: 15px; margin-top: 35px; }
 
 .clients { padding: 48px 0; }
 
@@ -442,7 +450,7 @@ body { margin: 0; position: relative; background-color: #fff; height: 100%; font
   .why-we__item { margin-bottom: 60px; }
   .why-we__item .subtitle-blue > img { width: 56px; }
   .why-we__item p { padding-left: 72px; width: 100%; }
-  .bg-funnel { padding: 120px 0 50px; background: url(../images/funnel/bg-funnel.svg) no-repeat top 10px right -100px/cover; }
+  .bg-funnel { padding: 120px 0 50px; background: url(../images/funnel/bg-funnel.svg) no-repeat top 10px right -100px/1600px; }
   .bg-funnel .title-section { margin-bottom: 38px; }
   .bg-funnel__img { display: none; }
   .bg-funnel__item { margin-top: 30px; }
@@ -478,6 +486,8 @@ body { margin: 0; position: relative; background-color: #fff; height: 100%; font
 @media only screen and (max-width: 767.8px) { .slider__item::after { width: 110%; }
   .slider__info .title-section { margin-bottom: 22px; }
   .bg-funnel { padding: 60px 0 40px; background: transparent; }
+  .bg-funnel__list { -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+  .bg-funnel__list > li { width: 48%; padding-right: 0; margin-top: 25px; }
   .get-marketing .subtitle-blue { width: 100%; }
   .get-marketing__img { margin-top: 26px; }
   .get-marketing__bottom .col-12 { margin-bottom: 36px; }
@@ -488,6 +498,8 @@ body { margin: 0; position: relative; background-color: #fff; height: 100%; font
   .slider__img { position: static; width: 100%; max-height: 280px; margin-bottom: 22px; }
   .slider__info .title-section { margin-bottom: 22px; }
   .slick-dots { bottom: 16px; }
+  .bg-funnel { padding: 20px 0 40px; }
+  .bg-funnel__list > li { width: 100%; }
   .clients__item { width: 50%; height: auto; margin-bottom: 14px; } }
 
 @media screen and (min-width: 1750px) { .slick-dots { right: 5.2%; }
@@ -498,5 +510,41 @@ body { margin: 0; position: relative; background-color: #fff; height: 100%; font
   .bg-funnel { max-width: 2560px; margin: 0 auto; }
   .bg-funnel__img > img { width: 2600px; }
   .bg-funnel__img_item { right: 180px; } }
+
+.first-screen { position: relative; height: 640px; overflow: hidden; }
+
+.first-screen .container, .first-screen .row { height: 100%; }
+
+.first-screen::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; background: url(../images/bg-first-screen.svg) no-repeat top left/cover; width: 76%; z-index: -1; }
+
+.first-screen__img { position: absolute; top: 0; left: 0; bottom: 0; z-index: -1; }
+
+.first-screen__img img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.first-screen .title-section { margin-bottom: 48px; }
+
+.first-screen p { margin-bottom: 24px; }
+
+.first-screen p:last-of-type { margin-bottom: 0; }
+
+.first-screen__btn { margin-top: 48px; }
+
+@media only screen and (max-width: 1199.8px) { .first-screen { height: 600px; }
+  .first-screen::after { width: 80%; }
+  .first-screen .title-section { margin-bottom: 38px; }
+  .first-screen p { margin-bottom: 18px; }
+  .first-screen__btn { margin-top: 38px; } }
+
+@media only screen and (max-width: 991.8px) { .first-screen { height: 540px; }
+  .first-screen::after { width: 98%; }
+  .first-screen .title-section { margin-bottom: 26px; }
+  .first-screen p { margin-bottom: 14px; }
+  .first-screen__btn { margin-top: 26px; } }
+
+@media only screen and (max-width: 767.8px) { .first-screen { padding: 40px 0; height: auto; }
+  .first-screen::after { width: 110%; top: -20%; }
+  .first-screen .title-section { text-align: center; }
+  .first-screen__img { display: none; }
+  .first-screen__btn { margin: 26px auto 0; } }
 
 /*# sourceMappingURL=style.css.map */
