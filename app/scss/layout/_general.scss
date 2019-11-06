@@ -1,0 +1,151 @@
+/*
+================================================================================
+|                                 GENERAL STYLE                                |
+================================================================================
+*/
+
+body {
+	margin: 0;
+	position: relative;
+	background-color: $base-bg;
+	height: 100%;
+	font-family: $base-font-family;
+	font-size: $base-fs;
+	line-height: $base-line-height;
+	font-weight: 400;
+	color: $base-text-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding-top: 88px;
+}
+
+.btn {
+	@extend %center-center;
+	width: 224px;
+	height: 56px;
+	font-size: $base-fs;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	@include radius(60px);
+}
+
+.btn-blue {
+	background-color: $bg-blue;
+	color: $text-white;
+	box-shadow: 0px 8px 10px rgba(0, 86, 152, 0.1);
+	&:hover {
+		color: $text-white;
+		box-shadow: 0px 8px 20px rgba(0, 86, 152, 0.3);
+	}
+}
+
+.section {
+	padding: 104px 0;
+	&_gray {
+		background-color: $bg-light-gray;
+	}
+}
+
+.title-section {
+	color: $title-color;
+	font-size: $font-size-h1;
+	line-height: $line-height-h1;
+	font-weight: 500;
+}
+
+.subtitle-blue {
+	color: $title-blue;
+	font-size: $font-size-h2;
+	line-height: $line-height-h2;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	> img {
+		margin-right: 16px;
+	}
+}
+
+.list-style {
+	width: 100%;
+	> li {
+		position: relative;
+		padding-left: 43px;
+		margin-bottom: 24px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 24px;
+			height: 24px;
+			background: url(../images/icons/check-mark.svg) no-repeat center center/contain;
+		}
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	body {
+		font-size: $base-fs - 2px;
+	}
+
+	.title-section {
+		font-size: $font-size-h1 - 4px;
+	}
+
+	.subtitle-blue {
+		font-size: $font-size-h2 - 3px;
+	}
+}
+
+@media only screen and (max-width: 1199.8px) {
+	.btn {
+		width: 200px;
+		height: 50px;
+		font-size: $base-fs - 2px;
+	}
+
+	.title-section {
+		font-size: $font-size-h1 - 10px;
+	}
+
+	.subtitle-blue {
+		font-size: $font-size-h2 - 6px;
+	}
+
+	.section {
+		padding: 74px 0;
+	}
+}
+
+@media only screen and (max-width: 991.8px) {
+	body {
+		padding-top: 70px;
+	}
+
+	.title-section {
+		font-size: $font-size-h1 - 14px;
+	}
+
+	.subtitle-blue {
+		font-size: $font-size-h2 - 8px;
+	}
+
+	.section {
+		padding: 48px 0;
+	}
+}
+
+@media only screen and (max-width: 767.8px) {
+}
+
+@media only screen and (max-width: 575.8px) {
+}
+
+@media only screen and (min-width: 1601px) {
+	.container {
+		max-width: 1534px;
+	}
+}
