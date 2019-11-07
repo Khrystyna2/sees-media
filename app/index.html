@@ -69,7 +69,7 @@
 								<a href="#">FAQ</a>
 							</li>
 						</ul>
-						<a href="#" class="btn btn-blue">Subscribe now</a>
+						<a href="#" class="btn btn-blue open-pop-up" data-target="#signUp">Subscribe now</a>
 					</nav>
 				</div>
 				<div class="col-md-6 col-lg-1 order-1 d-none d-md-block">
@@ -272,7 +272,7 @@
 						</div>
 					</div>
 				</div>
-				<a href="#" class="btn btn-blue why-we__btn">Demo</a>
+				<a href="#" class="btn btn-blue why-we__btn open-pop-up" data-target="#ourConsultant">Demo</a>
 			</div>
 		</section>
 
@@ -425,6 +425,77 @@
 			</div>
 		</section>
 	</main>
+
+	<!-- modal window -->
+	<div class="modal-window" id="signUp">
+		<div class="modal-window__content">
+			<div class="modal-window__body">
+				<button type="button" class="modal-window__close">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="#D5D5D5" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M25 1.37142L23.5715 0L12.5 10.6286L1.42856 0L0 1.37142L11.0714 12L0 22.6286L1.42856 24L12.5 13.3714L23.5715 24L25 22.6286L13.9286 12L25 1.37142Z" />
+					</svg>
+				</button>
+				<h4 class="modal-window__title subtitle-blue">Sign up for promotions and weekly Leads Offers</h4>
+				<form action="" class="form modal-window__form">
+					<div class="form__group">
+						<label for="">Full Name</label>
+						<input type="text" class="style-input">
+					</div>
+					<div class="form__group">
+						<label for="">Company Name</label>
+						<input type="text" class="style-input">
+					</div>
+					<div class="form__group">
+						<label for="">Email</label>
+						<input type="email" class="style-input">
+					</div>
+					<button type="submit" class="btn btn-blue">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-window" id="ourConsultant">
+		<div class="modal-window__content">
+			<div class="modal-window__body">
+				<button type="button" class="modal-window__close">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="#D5D5D5" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M25 1.37142L23.5715 0L12.5 10.6286L1.42856 0L0 1.37142L11.0714 12L0 22.6286L1.42856 24L12.5 13.3714L23.5715 24L25 22.6286L13.9286 12L25 1.37142Z" />
+					</svg>
+				</button>
+				<h4 class="modal-window__title subtitle-blue">Our sales consultant would love to hear from you</h4>
+				<form action="" class="form modal-window__form">
+					<div class="form__group">
+						<label for="">Full Name</label>
+						<input type="text" class="style-input">
+					</div>
+					<div class="form__group">
+						<label for="">Company Name</label>
+						<input type="text" class="style-input">
+					</div>
+					<div class="form__group">
+						<label for="">Phone Number</label>
+						<input type="text" class="style-input">
+					</div>
+					<div class="form__group">
+						<label for="">Website</label>
+						<input type="text" class="style-input">
+					</div>
+					<div class="form__group">
+						<label for="">Email</label>
+						<input type="email" class="style-input">
+					</div>
+					<div class="form__group">
+						<label for="">Tell us what you need</label>
+						<textarea cols="30" rows="10" class="style-textarea"></textarea>
+					</div>
+					<button type="submit" class="btn btn-blue">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<footer class="footer">
 		<div class="container">
