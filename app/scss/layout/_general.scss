@@ -19,6 +19,10 @@ body {
 	padding-top: 88px;
 }
 
+.overflow-hidden {
+	overflow: hidden;
+}
+
 .btn {
 	@extend %center-center;
 	width: 224px;
@@ -92,7 +96,7 @@ body {
 	}
 
 	.title-section {
-		font-size: $font-size-h1 - 4px;
+		font-size: $font-size-h1 - 5px;
 	}
 
 	.subtitle-blue {
@@ -142,6 +146,17 @@ body {
 }
 
 @media only screen and (max-width: 575.8px) {
+	.title-section {
+		font-size: $font-size-h1 - 18px;
+	}
+
+	.subtitle-blue {
+		font-size: $font-size-h2 - 10px;
+	}
+
+	.section {
+		padding: 38px 0;
+	}
 }
 
 @media only screen and (min-width: 1601px) {

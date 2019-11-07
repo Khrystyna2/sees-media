@@ -32,33 +32,27 @@ $(document).ready(function() {
 
 	if ($(window).width() >= 992) {
 		openSubMenuOnHover();
+		// console.log(openSubMenuOnHover(), "onHover");
+	} else {
+		openSubMenuOnClick();
+		// console.log(openSubMenuOnClick(), "onClick");
 	}
 
-	if ($(window).width() <= 991) {
-		openSubMenuOnClick();
-	}
+	// $(window).resize(function() {
+	// 	if ($(window).width() >= 992) {
+	// 		console.log(openSubMenuOnHover(), "onHover");
+	// 	} else {
+	// 		console.log(openSubMenuOnClick(), "onClick");
+	// 	}
+	// });
 
 	$(".menu__btn").on("click", function() {
 		$(this).toggleClass("active");
 		$(".menu").toggleClass("open");
 		$(".menu__dropdown").slideUp();
 		$(".menu__open-dropdown").removeClass("rotate");
+		$("body").toggleClass("overflow-hidden");
 	});
-
-	$(window).resize(function() {
-		if ($(window).width() >= 992) {
-			openSubMenuOnHover();
-		} else {
-			openSubMenuOnClick();
-		}
-	});
-
-	// $(window).scroll(function() {
-	// 	if ($(window).scrollTop() >= 1) {
-	// 		$(".menu__btn").removeClass("active");
-	// 		$(".menu").removeClass("open");
-	// 	}
-	// });
 
 	$(".slider").slick({
 		arrows: false,

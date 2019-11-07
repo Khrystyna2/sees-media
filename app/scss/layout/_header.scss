@@ -224,6 +224,7 @@
 		}
 		&__nav {
 			justify-content: flex-end;
+			align-items: center;
 			.btn-blue {
 				height: 40px;
 				width: 160px;
@@ -255,8 +256,8 @@
 			display: block;
 			order: 1;
 			position: relative;
-			margin: 16px 0 0 20px;
-			height: 17px;
+			margin-left: 20px;
+			height: 23px;
 			width: 23px;
 			background: transparent;
 			cursor: pointer;
@@ -264,7 +265,8 @@
 			> span {
 				display: block;
 				position: absolute;
-				top: 0;
+				top: 50%;
+				margin-top: -1.5px;
 				left: 0;
 				width: 100%;
 				height: 3px;
@@ -377,6 +379,19 @@
 }
 
 @media only screen and (max-width: 575.8px) {
+	.header {
+		height: auto;
+		padding: 5px 0;
+		.logo {
+			width: 62px;
+		}
+		&__nav {
+			.btn-blue {
+				height: 36px;
+				width: 150px;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 1750px) {
