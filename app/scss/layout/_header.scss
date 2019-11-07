@@ -13,6 +13,10 @@
 	right: 0;
 	width: 100%;
 	z-index: 100;
+	.container,
+	.row {
+		height: 100%;
+	}
 	&__social-link {
 		position: absolute;
 		top: -12px;
