@@ -17,7 +17,7 @@
 		margin: -24px 0 24px;
 	}
 	&__address {
-		margin-bottom: 24px;
+		margin-bottom: 24px !important;
 		max-width: 224px;
 	}
 	&__email {
@@ -57,7 +57,7 @@
 	}
 	&__text {
 		font-size: $base-fs - 2px;
-		margin-bottom: 24px;
+		margin-bottom: 24px !important;
 	}
 	&__social-link {
 		position: static;
@@ -129,7 +129,7 @@
 			margin: 0 auto 24px;
 		}
 		&__address {
-			margin: 0 auto 18px;
+			margin: 0 auto 18px !important;
 		}
 		&__email {
 			margin-bottom: 28px;

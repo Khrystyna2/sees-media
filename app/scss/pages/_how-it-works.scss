@@ -2,7 +2,6 @@
 	padding: 88px 0;
 	background: url(../images/how-it-work/bg-how-it-work.svg) no-repeat center bottom/contain;
 	.title-section {
-		margin-bottom: 48px;
 		text-align: center;
 	}
 	&__item {
@@ -70,6 +69,9 @@
 	}
 	&__info {
 		max-width: 608px;
+		.title-section {
+			margin-bottom: 0;
+		}
 		.subtitle-blue {
 			margin: 18px 0 48px;
 		}
@@ -87,9 +89,6 @@
 @media only screen and (max-width: 1199.8px) {
 	.how-it-works {
 		padding: 68px 0;
-		.title-section {
-			margin-bottom: 38px;
-		}
 		&__item {
 			width: 88px;
 			margin-bottom: 70px;

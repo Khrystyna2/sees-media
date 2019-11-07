@@ -50,11 +50,19 @@ body {
 	}
 }
 
+p {
+	margin-bottom: 24px;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
 .title-section {
 	color: $title-color;
 	font-size: $font-size-h1;
 	line-height: $line-height-h1;
 	font-weight: 500;
+	margin-bottom: 48px;
 }
 
 .subtitle-blue {
@@ -111,8 +119,13 @@ body {
 		font-size: $base-fs - 2px;
 	}
 
+	p {
+		margin-bottom: 18px;
+	}
+
 	.title-section {
 		font-size: $font-size-h1 - 10px;
+		margin-bottom: 38px;
 	}
 
 	.subtitle-blue {
@@ -129,8 +142,13 @@ body {
 		padding-top: 70px;
 	}
 
+	p {
+		margin-bottom: 16px;
+	}
+
 	.title-section {
 		font-size: $font-size-h1 - 14px;
+		margin-bottom: 26px;
 	}
 
 	.subtitle-blue {

@@ -33,13 +33,6 @@
 		padding-left: 130px;
 		.title-section {
 			line-height: $line-height-h2;
-			margin-bottom: 48px;
-		}
-		p {
-			margin-bottom: 24px;
-			&:last-of-type {
-				margin-bottom: 0;
-			}
 		}
 	}
 	&__line {
@@ -94,6 +87,9 @@
 	}
 	&__info {
 		max-width: 608px;
+		.title-section {
+			margin-bottom: 0;
+		}
 		.subtitle-blue {
 			margin: 10px 0 48px;
 		}
@@ -130,9 +126,6 @@
 	position: relative;
 	padding: 217px 0 104px;
 	overflow: hidden;
-	.title-section {
-		margin-bottom: 48px;
-	}
 	&__text {
 		margin-bottom: 24px;
 		&:last-of-type {
@@ -383,17 +376,11 @@
 
 	.bg-funnel {
 		padding: 160px 0 80px;
-		.title-section {
-			margin-bottom: 38px;
-		}
 		&__item {
 			width: calc(100% + 40px);
 			margin-top: 36px;
 			.subtitle-blue {
 				margin-bottom: 20px;
-			}
-			p {
-				margin-bottom: 16px;
 			}
 		}
 		&__img {
@@ -418,14 +405,6 @@
 		}
 		&__img {
 			width: 50%;
-		}
-		&__info {
-			.title-section {
-				margin-bottom: 38px;
-			}
-			p {
-				margin-bottom: 18px;
-			}
 		}
 		&__line {
 			margin-top: 32px;
@@ -468,9 +447,6 @@
 	.bg-funnel {
 		padding: 120px 0 50px;
 		background: url(../images/funnel/bg-funnel.svg) no-repeat top 10px right -100px / 1600px;
-		.title-section {
-			margin-bottom: 38px;
-		}
 		&__img {
 			display: none;
 		}
@@ -502,14 +478,6 @@
 		}
 		&__img {
 			width: 44%;
-		}
-		&__info {
-			.title-section {
-				margin-bottom: 26px;
-			}
-			p {
-				margin-bottom: 16px;
-			}
 		}
 		&__line {
 			display: none;
@@ -644,11 +612,6 @@
 			width: 100%;
 			max-height: 280px;
 			margin-bottom: 22px;
-		}
-		&__info {
-			.title-section {
-				margin-bottom: 22px;
-			}
 		}
 	}
 

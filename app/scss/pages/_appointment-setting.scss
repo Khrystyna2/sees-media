@@ -28,15 +28,6 @@
 			object-fit: cover;
 		}
 	}
-	.title-section {
-		margin-bottom: 48px;
-	}
-	p {
-		margin-bottom: 24px;
-		&:last-of-type {
-			margin-bottom: 0;
-		}
-	}
 	&__btn {
 		margin-top: 48px;
 	}
@@ -47,12 +38,6 @@
 		height: 600px;
 		&::after {
 			width: 80%;
-		}
-		.title-section {
-			margin-bottom: 38px;
-		}
-		p {
-			margin-bottom: 18px;
 		}
 		&__btn {
 			margin-top: 38px;
@@ -65,9 +50,6 @@
 		height: 540px;
 		&::after {
 			width: 98%;
-		}
-		.title-section {
-			margin-bottom: 26px;
 		}
 		p {
 			margin-bottom: 14px;
@@ -98,5 +80,12 @@
 	}
 }
 
-@media only screen and (max-width: 575.8px) {
+@media only screen and (max-width: 375px) {
+	.first-screen {
+		.title-section {
+			br {
+				display: none;
+			}
+		}
+	}
 }
