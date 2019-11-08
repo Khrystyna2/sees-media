@@ -1,0 +1,39 @@
+.privacy-policy {
+	padding: 88px 0 124px;
+	&__item {
+		margin-top: 80px;
+		.subtitle-blue {
+			margin-bottom: 24px;
+		}
+		.mb-138 {
+			margin-top: 138px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1199.8px) {
+	.privacy-policy {
+		padding: 68px 0 80px;
+		&__item {
+			margin-top: 60px;
+			.subtitle-blue {
+				margin-bottom: 18px;
+			}
+			.mb-138 {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991.8px) {
+	.privacy-policy {
+		padding: 40px 0;
+		&__item {
+			margin-top: 30px;
+			.subtitle-blue {
+				margin-bottom: 16px;
+			}
+		}
+	}
+}

@@ -701,4 +701,21 @@ p:last-of-type { margin-bottom: 0; }
   .why-we-different .title-section { text-align: center; }
   .smg-culture .title-section { text-align: center; } }
 
+.privacy-policy { padding: 88px 0 124px; }
+
+.privacy-policy__item { margin-top: 80px; }
+
+.privacy-policy__item .subtitle-blue { margin-bottom: 24px; }
+
+.privacy-policy__item .mb-138 { margin-top: 138px; }
+
+@media only screen and (max-width: 1199.8px) { .privacy-policy { padding: 68px 0 80px; }
+  .privacy-policy__item { margin-top: 60px; }
+  .privacy-policy__item .subtitle-blue { margin-bottom: 18px; }
+  .privacy-policy__item .mb-138 { margin-top: 0; } }
+
+@media only screen and (max-width: 991.8px) { .privacy-policy { padding: 40px 0; }
+  .privacy-policy__item { margin-top: 30px; }
+  .privacy-policy__item .subtitle-blue { margin-bottom: 16px; } }
+
 /*# sourceMappingURL=style.css.map */
