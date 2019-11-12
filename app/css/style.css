@@ -256,7 +256,7 @@ p:last-of-type { margin-bottom: 0; }
 |                                     FOOTER                                   |
 ================================================================================
 */
-.footer { padding: 80px 0 54px; background-color: #f7f7f7; line-height: 120%; }
+.footer { padding: 80px 0 54px; background-color: #f0f0f0; line-height: 120%; }
 
 .footer_small { font-size: 16px; color: #9f9f9f; }
 
@@ -717,5 +717,39 @@ p:last-of-type { margin-bottom: 0; }
 @media only screen and (max-width: 991.8px) { .privacy-policy { padding: 40px 0; }
   .privacy-policy__item { margin-top: 30px; }
   .privacy-policy__item .subtitle-blue { margin-bottom: 16px; } }
+
+.our-team { padding: 46px; }
+
+.our-team_gray { background: #f7f7f7 url(../images/our-team/logo-bg.svg) no-repeat center right; }
+
+.our-team .row { -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.our-team__image { position: relative; width: 100%; margin-bottom: -46px; }
+
+.our-team__icon { position: absolute; bottom: 32px; right: -32px; }
+
+.our-team__icon_left { right: auto; left: -32px; }
+
+.our-team__icon > li { width: 32px; margin-bottom: 24px; }
+
+.our-team__icon > li:last-of-type { margin-bottom: 0; }
+
+.our-team__title { margin-bottom: 16px; }
+
+.our-team__desc { display: block; color: #c6c6c6; margin-bottom: 48px; }
+
+@media only screen and (max-width: 1600px) { .our-team .row { -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+  .our-team__image { position: absolute; bottom: 0; left: 0; }
+  .our-team__desc { margin-bottom: 38px; } }
+
+@media only screen and (max-width: 1199.8px) { .our-team .row { -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  .our-team__image { position: relative; bottom: 0; left: 0; margin-bottom: 0; }
+  .our-team__desc { margin-bottom: 28px; } }
+
+@media only screen and (max-width: 991.8px) { .our-team { padding: 30px 0; }
+  .our-team__image { max-width: 260px; margin: 0 auto 26px; }
+  .our-team__icon { bottom: 20px; right: -10px; }
+  .our-team__icon_left { left: -10px; }
+  .our-team__icon > li { width: 26px; } }
 
 /*# sourceMappingURL=style.css.map */
