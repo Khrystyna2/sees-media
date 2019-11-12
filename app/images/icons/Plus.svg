@@ -1,0 +1,16 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0)">
+<rect x="6.19238" y="6.76794" width="59.6506" height="59.5123" fill="url(#pattern0)"/>
+<path d="M36.0006 7.05597V64.8H27.2958C26.5038 64.8 25.9206 64.1045 25.9206 63.3125V47.4652C25.9206 46.6732 25.2078 46.08 24.4158 46.08H8.56864C7.77664 46.08 7.05664 45.3772 7.05664 44.5852V27.2232C7.05664 26.4312 7.77664 25.776 8.56864 25.776H24.4158C25.2078 25.776 25.9206 25.1352 25.9206 24.3432V8.49597C25.9206 7.70397 26.5038 7.05597 27.2958 7.05597H36.0006Z" fill="#F9A431"/>
+<path d="M64.945 27.2232V44.5852C64.945 45.3772 64.225 46.08 63.433 46.08H47.5858C46.7938 46.08 46.081 46.6732 46.081 47.4652V63.3125C46.081 64.1045 45.4978 64.8 44.7058 64.8H36.001V7.05597H44.7058C45.4978 7.05597 46.081 7.70397 46.081 8.49597V24.3432C46.081 25.1352 46.7938 25.776 47.5858 25.776H63.433C64.225 25.776 64.945 26.4312 64.945 27.2232Z" fill="#EE9429"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0"/>
+</pattern>
+<clipPath id="clip0">
+<rect width="72" height="72" fill="white"/>
+</clipPath>
+<image id="image0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2EAAANfCAYAAABQfNXiAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA"/>
+</defs>
+</svg>
