@@ -1,0 +1,314 @@
+.significant-increase {
+	padding-top: 88px;
+	.btn-blue {
+		margin-left: auto;
+		img {
+			width: 20px;
+			margin-right: 12px;
+		}
+	}
+	&__client {
+		margin-top: 32px;
+		p {
+			> b {
+				font-size: $base-fs + 2px;
+			}
+		}
+		.mt-48 {
+			margin-top: 48px;
+		}
+	}
+	&__list {
+		margin-top: 60px;
+		display: flex;
+		width: calc(100% + 32px);
+		margin-left: -16px;
+		> li {
+			background: $base-bg;
+			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+			@include radius(25px);
+			margin: 0 16px;
+			width: 20%;
+			padding: 24px;
+			align-items: flex-start;
+			img {
+				width: 64px;
+				min-width: 64px;
+				margin-right: 16px;
+			}
+		}
+	}
+	&__button {
+		p {
+			font-size: $base-fs + 2px;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+}
+
+.significant-challenges {
+	padding: 80px 0;
+	text-align: center;
+	.title-section {
+		margin-bottom: 24px;
+	}
+}
+
+.significant-solution {
+	padding-bottom: 90px;
+	.title-section {
+		text-align: center;
+		margin-bottom: 67px;
+	}
+	&__list {
+		width: 100%;
+		li {
+			margin-bottom: 64px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			.subtitle-blue {
+				margin-bottom: 10px;
+				img {
+					width: 80px;
+					min-width: 80px;
+					margin-right: 32px;
+				}
+			}
+			p {
+				padding-left: 112px;
+			}
+		}
+	}
+}
+
+.substantial-benefits {
+	padding-top: 118px;
+	.title-section {
+		margin-bottom: 80px;
+	}
+	&__item {
+		margin-bottom: 48px;
+		padding-bottom: 48px;
+		border-bottom: 1px solid #d5d5d5;
+		&:last-of-type {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border: none;
+		}
+		.subtitle-blue {
+			margin-bottom: 48px;
+		}
+	}
+	&__card {
+		display: flex;
+		align-items: flex-start;
+		img {
+			width: 72px;
+			min-width: 72px;
+			margin-right: 16px;
+		}
+		p {
+			> span {
+				display: block;
+				font-size: $font-size-h2;
+				line-height: $line-height-h2;
+				font-weight: 500;
+				margin-bottom: 4px;
+			}
+		}
+	}
+}
+
+@media only screen and(max-width: 1600px) {
+	.significant-increase {
+		&__list {
+			flex-wrap: wrap;
+			justify-content: center;
+			> li {
+				width: 28%;
+				padding: 18px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media only screen and(max-width: 1199.8px) {
+	.significant-increase {
+		padding-top: 50px;
+		&__client {
+			margin-top: 22px;
+			p {
+				> b {
+					font-size: $base-fs;
+				}
+			}
+			.mt-48 {
+				margin-top: 38px;
+			}
+		}
+		&__list {
+			margin-top: 40px;
+			> li {
+				img {
+					width: 54px;
+					min-width: 54px;
+				}
+			}
+		}
+		&__button {
+			p {
+				font-size: $base-fs;
+				width: 100%;
+			}
+		}
+	}
+
+	.significant-challenges {
+		padding: 60px 0;
+	}
+
+	.significant-solution {
+		padding-bottom: 60px;
+		.title-section {
+			margin-bottom: 40px;
+		}
+		&__list {
+			li {
+				margin-bottom: 34px;
+				.subtitle-blue {
+					img {
+						width: 60px;
+						min-width: 60px;
+						margin-right: 24px;
+					}
+				}
+				p {
+					padding-left: 84px;
+				}
+			}
+		}
+	}
+
+	.substantial-benefits {
+		padding-top: 80px;
+		.title-section {
+			margin-bottom: 40px;
+		}
+		&__item {
+			margin-bottom: 28px;
+			padding-bottom: 28px;
+			.subtitle-blue {
+				margin-bottom: 28px;
+			}
+		}
+		&__card {
+			img {
+				width: 62px;
+				min-width: 62px;
+			}
+			p {
+				> span {
+					font-size: $font-size-h2 - 6px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and(max-width: 991.8px) {
+	.significant-increase {
+		padding-top: 30px;
+		&__client {
+			.col-12 {
+				&:first-of-type {
+					margin-bottom: 28px;
+				}
+			}
+			.mt-48 {
+				margin-top: 28px;
+			}
+		}
+		&__list {
+			width: 100%;
+			margin-left: 0;
+			> li {
+				width: 40%;
+				margin: 0 10px 20px;
+				img {
+					width: 40px;
+					min-width: 40px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	.significant-challenges {
+		padding: 40px 0;
+	}
+
+	.significant-solution {
+		padding-bottom: 40px;
+	}
+
+	.substantial-benefits {
+		padding-top: 40px;
+	}
+}
+
+@media only screen and(max-width: 767.8px) {
+	.significant-increase {
+		&__list {
+			> li {
+				width: 100%;
+				margin: 0 0 20px;
+				img {
+					width: 60px;
+					min-width: 60px;
+				}
+			}
+		}
+	}
+
+	.significant-solution {
+		.title-section {
+			margin-bottom: 30px;
+		}
+		&__list {
+			li {
+				margin-bottom: 24px;
+				.subtitle-blue {
+					img {
+						width: 46px;
+						min-width: 46px;
+						margin-right: 20px;
+					}
+				}
+				p {
+					padding-left: 66px;
+				}
+			}
+		}
+	}
+
+	.substantial-benefits {
+		.title-section {
+			margin-bottom: 30px;
+		}
+		&__card {
+			margin-bottom: 20px;
+			img {
+				width: 56px;
+				min-width: 56px;
+			}
+			p {
+				> span {
+					font-size: $font-size-h2 - 8px;
+				}
+			}
+		}
+	}
+}

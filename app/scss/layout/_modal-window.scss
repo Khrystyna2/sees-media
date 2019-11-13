@@ -63,7 +63,7 @@
 
 #signUp {
 	.modal-window__body {
-		background-image: url(../../images/modal-window/bg-4.svg);
+		background-image: url(../images/modal-window/bg-4.svg);
 		background-position: top 56px left 16px;
 	}
 	.subtitle-blue {
@@ -74,12 +74,27 @@
 
 #ourConsultant {
 	.modal-window__body {
-		background-image: url(../../images/modal-window/bg-2.png), url(../../images/modal-window/bg-1.png);
+		background-image: url(../images/modal-window/bg-2.png), url(../images/modal-window/bg-1.png);
 		background-position: top left 32px, bottom right 32px;
 	}
 	.subtitle-blue {
 		max-width: 420px;
 		margin: 0 auto;
+	}
+}
+
+#download {
+	.modal-window__body {
+		background-image: url(../images/modal-window/bg-3.svg);
+		background-position: top 120px left;
+	}
+	.subtitle-blue {
+		justify-content: center;
+		margin-bottom: 24px;
+	}
+	p {
+		max-width: 480px;
+		text-align: center;
 	}
 }
 
@@ -117,6 +132,19 @@
 		}
 		.subtitle-blue {
 			max-width: 350px;
+		}
+	}
+
+	#download {
+		.modal-window__body {
+			background-position: top 100px left;
+			background-size: 320px;
+		}
+		.subtitle-blue {
+			margin-bottom: 20px;
+		}
+		p {
+			max-width: 400px;
 		}
 	}
 }
