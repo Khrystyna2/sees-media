@@ -144,6 +144,8 @@ p:last-of-type { margin-bottom: 0; }
 
 @media only screen and (min-width: 1601px) { .container { max-width: 1534px; } }
 
+@media only screen and (min-height: 1100px) { body { min-height: 100vh; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; } }
+
 /*
 ================================================================================
 |                                     HEADER                                   |
@@ -808,5 +810,37 @@ p:last-of-type { margin-bottom: 0; }
 @media only screen and (max-width: 991.8px) { .privacy-policy { padding: 40px 0; }
   .privacy-policy__item { margin-top: 30px; }
   .privacy-policy__item .subtitle-blue { margin-bottom: 16px; } }
+
+.faq { padding: 88px 0 140px; }
+
+.accordion { margin-top: 80px; }
+
+.accordion__item { background-color: #fff; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); border-radius: 25px; -webkit-border-radius: 25px; -moz-border-radius: 25px; -ms-border-radius: 25px; -o-border-radius: 25px; margin-bottom: 16px; padding: 32px 32px 32px 48px; width: 100%; }
+
+.accordion__icon { width: 28px; margin-left: 20px; transition: -webkit-transform 0.3s; transition: transform 0.3s; transition: transform 0.3s, -webkit-transform 0.3s; -webkit-transition: transform 0.3s; -moz-transition: transform 0.3s; -ms-transition: transform 0.3s; -o-transition: transform 0.3s; }
+
+.accordion__icon.rotate { transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); }
+
+.accordion__body { display: none; margin-top: 40px; }
+
+.accordion__body p { width: 88%; }
+
+@media only screen and (max-width: 1199.8px) { .faq { padding: 50px 0 90px; }
+  .accordion { margin-top: 40px; }
+  .accordion__item { padding: 22px 28px; }
+  .accordion__icon { width: 24px; }
+  .accordion__body { margin-top: 30px; }
+  .accordion__body p { width: 90%; } }
+
+@media only screen and (max-width: 991.8px) { .faq { padding: 40px 0 60px; }
+  .faq .title-section + p { margin-bottom: 26px; }
+  .accordion { margin-top: 0; } }
+
+@media only screen and (max-width: 767.8px) { .faq { padding: 30px 0; }
+  .accordion { margin-top: 0; }
+  .accordion__item { padding: 22px 20px; }
+  .accordion__icon { width: 20px; }
+  .accordion__body { margin-top: 20px; }
+  .accordion__body p { width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

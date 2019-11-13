@@ -87,4 +87,26 @@ $(document).ready(function() {
 	$(".modal-window__body").click(function(e) {
 		e.stopPropagation();
 	});
+
+	// accordion
+	$(".accordion__header").click(function() {
+		// $(".accordion__header img").removeClass("rotate");
+		// $(".accordion__body").slideUp();
+		$(this)
+			.find("img")
+			.toggleClass("rotate");
+		$(this)
+			.next("article")
+			.slideToggle();
+		$(this)
+			.closest("li")
+			.siblings("li")
+			.find("img")
+			.removeClass("rotate");
+		$(this)
+			.closest("li")
+			.siblings("li")
+			.find("article")
+			.slideUp();
+	});
 });
